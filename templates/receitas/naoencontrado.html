@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Preloader -->
+<div id="preloader">
+    <i class="circle-preloader"></i>
+    <img src="{% static 'img/core-img/pizza.png' %}" alt="">
+</div>
+
+{% include 'partials/_busca.html' %}
+
+{% include 'partials/_menu.html' %}
+
+<section class="contact-area section-padding-0-40">
+    <div class="container">
+        <p class="text-center text-success h1">OPS: Você se perdeu!!!</p>
+    </div>
+    <div class="container">
+        <a class="btn btn-info" href="{% url 'index' %}">Clique para voltar</a>
+    </div>
+</section>
+
+{% include 'partials/_footer.html' %}
+{% endblock %}
+
